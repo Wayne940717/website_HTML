@@ -2,7 +2,162 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wayne's Blog</title>
+    <!-- Google Font: Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS樣式 -->
+    <style>
+        /* Reset 基本樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 設定全域樣式 */
+        body {
+            font-family: 'Noto Sans TC', Arial, sans-serif; /* 更換基礎字體 */
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f4f8; /* 柔和背景顏色 */
+        }
+
+        /* 超連結樣式 */
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* 頁面區塊樣式 */
+        article {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #ffffff; /* 白色區塊背景 */
+            border-radius: 10px; /* 圓角效果 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+        }
+
+        /* 標題樣式 */
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        mark {
+            background-color: #FFEB3B;
+            font-weight: bold;
+        }
+
+        /* 圖片樣式 */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 導覽列樣式 */
+        nav {
+            background-color: #007BFF;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        /* 音樂與影片樣式 */
+        audio, video {
+            display: block;
+            margin: 10px auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* 表單樣式 */
+        fieldset {
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            article {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!--頁頭區-->
@@ -21,155 +176,77 @@
 
     <!--主內容區-->
     <main>
-        <!--個人介紹-->
         <article id="section1">
-            <header>
-                <h2>關於我</h2>
-                <p>我叫許哲瑋，在此部落格中，將分享我在大學及生活的點滴</p>
-            </header>
-            <section>
-                <table cellspacing="20">
-                    <tr>
-                        <td><img src="picture1.jpg" alt="picture1"></td>
-                        <td><h1>許哲瑋</h1><p>
-                            <em><strong><a href="https://www.ntue.edu.tw/">國立台北教育大學</a></strong>學生</em></p></td> 
-                    </tr>
-                </table>
-            </section>
-            <section>
-                <p>我是一位<mark>資訊科學系</mark>的大學生，也是系學會<mark>會長</mark>，平常的興趣是<mark>看漫畫</mark>和<mark>聽音樂</mark>，專長是<mark>運動</mark></p>
-                <p>此外，我個性則比較<mark>外向</mark>，喜歡交朋友，喜歡嘗試新的事物，探索自己的興趣，愛好學習讓自己成長。</p>
-            </section>
-        </article>
-        <article id="section2">
-            <header>
-                <h2>求學經歷</h2>
-            </header>
-            <section>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dates</th>
-                            <th>Study</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2011-2017</td>
-                            <td>臺北市萬華區萬大國民小學</td>
-                        </tr>
-                        <tr>
-                            <td>2017-2020</td>
-                            <td>臺北市立南門國民中學</td>
-                        </tr>
-                        <tr>
-                            <td>2020-2023</td>
-                            <td>新北市立海山高級中學</td>
-                        </tr>
-                        <tr>
-                            <td>2023-2024</td>
-                            <td>國立台北教育大學資訊科學系</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </article>
-        <!-- 技能介紹 -->
-        <article id="section3">
-            <header>
-                <h2>程式技能</h2>
-            </header>
-            <section>
-                <table>
-                    <tr>
-                        <td>Java</td>
-                        <td>⭐</td>
-                    </tr>
-                    <tr>
-                        <td>C++</td>
-                        <td>⭐⭐</td>
-                    </tr>
-                </table>
-            </section>
+            <h2>關於我</h2>
+            <p>我叫許哲瑋，在此部落格中，將分享我在大學及生活的點滴</p>
+            <img src="picture1.jpg" alt="我的照片" width="250">
+            <p>我是一位<mark>資訊科學系</mark>的大學生，也是系學會<mark>會長</mark>，平常興趣是<mark>看漫畫</mark>和<mark>聽音樂</mark>。</p>
         </article>
 
-        <!-- 音樂作品介紹 -->
+        <article id="section2">
+            <h2>求學經歷</h2>
+            <table>
+                <tr>
+                    <th>年份</th>
+                    <th>學校</th>
+                </tr>
+                <tr>
+                    <td>2011-2017</td>
+                    <td>臺北市萬華區萬大國小</td>
+                </tr>
+                <tr>
+                    <td>2017-2020</td>
+                    <td>臺北市立南門國中</td>
+                </tr>
+            </table>
+        </article>
+
+        <article id="section3">
+            <h2>程式技能</h2>
+            <table>
+                <tr><td>Java</td><td>⭐</td></tr>
+                <tr><td>C++</td><td>⭐⭐</td></tr>
+            </table>
+        </article>
+
         <article id="section4">
             <h2>音樂作品</h2>
-            <p>此音訊是運用AI協助，創作出來的音樂</p>
             <audio controls>
                 <source src="music1.mp3" type="audio/mpeg">
             </audio>
         </article>
 
-        <!-- 視訊作品介紹 -->
         <article id="section5">
             <h2>影片作品</h2>
-            <p>這是我們在多媒體概論這堂課的期中影片，主題是染上讀書。</p>
-            <video controls width="300">
-                <!-- 改為你的作品 -->
-                <source src="video1.mp4" type="audio/mpeg">                
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
             </video>
-            &nbsp;&nbsp;<!-- 添加間隔 -->
         </article>
 
-        <!-- 圖片作品集介紹與描述 -->
         <article id="section6">
             <h2>偶像與導師</h2>
-            <figure style="display:inline-block;">
-                <!-- 改為你的作品 -->
-                <img src="picture2.jpg" alt="魯夫" width="450">
-                <figcaption>航海王 魯夫</figcaption>
-            </figure>
-            <figure style="display:inline-block;">
-                <!-- 改為你的作品 -->
-                <img src="picture3.webp" alt="Curry" width="450">
-                <figcaption>勇士隊 Stephen Curry</figcaption>
-            </figure>
+            <img src="picture2.jpg" alt="偶像" width="400">
+            <figcaption>航海王 魯夫</figcaption>
         </article>
 
-        <!-- 嵌入PDF文件 -->
         <article id="section7">
             <h2>更多資訊</h2>
-            <!-- 改為你的作品 -->
-            <embed src="pdf1.pdf" width="500" height="600">
+            <embed src="pdf1.pdf" width="100%" height="400">
         </article>
 
-        <!-- 互動元素 -->
         <fieldset>
-            <legend>觀看後問卷</legend>
-                <div>
-                    <label for="姓名">姓名 :</label>
-                    <input type="text" id="姓名" name="姓名" required>
-                </div>
-    
-                <br>
-
-                <div>
-                    <label for="網站需改進的地方?">網站需改進的地方?</label>
-                    <input type="text" id="網站需改進的地方?" name="網站需改進的地方?" required>
-                </div>
-                
-                <br>
-    
-                <div>
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
-                </div>
-
-                <br>
-                <p>謝謝您寶貴的建議</p>
-            </fieldset>
-            <br>
-
-        <!-- 加入地圖 -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2784024338266!2d121.54206247541927!3d25.02462437782254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1731827435609!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+            <legend>問卷</legend>
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name">
+            <label for="suggest">建議:</label>
+            <textarea id="suggest" name="suggest" rows="4"></textarea>
+        </fieldset>
     </main>
 
     <!--頁尾區-->
     <footer>
         <p>聯絡我們：s111216026@stu.ntue.edu.tw</p>
-        <time datetime="2024-11-28">最後更新時間：2024年11月28日</time>
+        <p>最後更新時間：2024年11月28日</p>
     </footer>
 </body>
 </html>
