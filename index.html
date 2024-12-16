@@ -145,6 +145,41 @@
             border-color: #007BFF;
             outline: none;
         }
+        /* 圖片懸浮縮放效果 */
+        img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05); /* 放大5% */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 增加行高 */
+        p {
+            line-height: 1.8;
+        }
+
+        /* 美觀的送出按鈕 */
+        .submit-btn {
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* 增加圖片陰影 */
+        article {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+        }
 
         /* 響應式設計 */
         @media (max-width: 768px) {
@@ -155,6 +190,18 @@
 
             article {
                 padding: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            article {
+                padding: 10px;
             }
         }
     </style>
@@ -198,6 +245,14 @@
                     <td>2017-2020</td>
                     <td>臺北市立南門國中</td>
                 </tr>
+                <tr>
+                    <td>2020-2023</td>
+                    <td>新北市立海山高中</td>
+                </tr>
+                <tr>
+                    <td>2023-迄今</td>
+                    <td>國立台北教育大學</td>
+                </tr>
             </table>
         </article>
 
@@ -208,6 +263,7 @@
                 <tr><td>C++</td><td>⭐⭐</td></tr>
             </table>
         </article>
+        
 
         <article id="section4">
             <h2>音樂作品</h2>
@@ -227,6 +283,8 @@
             <h2>偶像與導師</h2>
             <img src="picture2.jpg" alt="偶像" width="400">
             <figcaption>航海王 魯夫</figcaption>
+            <img src="picture3.webp" alt="偶像" width="400">
+            <figcaption>Stephen Curry</figcaption>
         </article>
 
         <article id="section7">
@@ -240,13 +298,14 @@
             <input type="text" id="name" name="name">
             <label for="suggest">建議:</label>
             <textarea id="suggest" name="suggest" rows="4"></textarea>
+            <button type="submit" class="submit-btn">送出</button>
         </fieldset>
     </main>
 
     <!--頁尾區-->
     <footer>
         <p>聯絡我們：s111216026@stu.ntue.edu.tw</p>
-        <p>最後更新時間：2024年11月28日</p>
+        <p>最後更新時間：2024年12月16日</p>
     </footer>
 </body>
 </html>
